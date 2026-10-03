@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Omar &amp; Laila — Wedding Invitation, 25 July 2026, Cairo</title>
+    <meta
+      name="description"
+      content="Omar El Shazly & Laila Farouk invite you to their wedding on 25 July 2026 at the Four Seasons Hotel, Nile Plaza, Cairo. Schedule, dress code, and RSVP."
+    />
+    <meta property="og:title" content="Omar &amp; Laila — Wedding Invitation" />
+    <meta
+      property="og:description"
+      content="Join us on 25 July 2026 at the Four Seasons Hotel, Nile Plaza, Cairo."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap-grid.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="is-locked">
+<!-- ENTRANCE GATE -->
+<div class="gate" id="gate">
+  <div class="gate__inner">
+    <div class="infinity">&#8734;</div>
+    <p class="label">You have received an invitation from</p>
+    <h1 class="script script--xl">Omar <span class="amp">&amp;</span> Laila</h1>
+    <p class="italic-note">25 . 08 . 2026 &mdash; Cairo</p>
+    <button class="btn-outline" type="button" id="enterBtn">Open the invitation</button>
+  </div>
+</div>
+
+<!-- MUSIC TOGGLE -->
+<div class="music-player" id="musicPlayer" hidden>
+  <button class="music-player__play" id="playBtn" type="button" aria-label="Pause music">
+    <svg class="icon icon-play" viewBox="0 0 24 24" style="display:none"><path d="M8 5v14l11-7z"/></svg>
+    <svg class="icon icon-pause" viewBox="0 0 24 24"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+  </button>
+</div>
+<audio id="track" src="WILDFLOWER.mp3" loop preload="auto"></audio>
+    <main id="site">
+      <!-- HERO -->
+      <section class="section section--hero reveal" id="hero">
+        <div class="inner text-center">
+          <div class="infinity">&#8734;</div>
+          <p class="label">You have received an invitation from</p>
+          <h1 class="script script--xl">Omar <span class="amp">&amp;</span> Laila</h1>
+          <div class="scroll-hint" aria-hidden="true"><span></span></div>
+        </div>
+      </section>
+
+      <!-- SOULS -->
+      <section class="section reveal">
+        <div class="inner">
+          <article class="card">
+            <h2 class="script script--lg text-center">These two souls</h2>
+            <p class="italic-note text-center">had no idea&hellip;</p>
+            <figure class="figure-frame">
+              <img
+                src="/images/couple.jpg"
+                width="1024"
+                height="1024"
+                alt="Line illustration of Omar and Laila holding hands with childhood portraits in gold frames"
+              />
+            </figure>
+            <h3 class="script script--lg text-center mt-4">
+              Omar <span class="amp">&amp;</span> Laila
+            </h3>
+            <p class="label label--sm text-center">Omar El Shazly &amp; Laila Farouk</p>
+            <p class="italic-note text-center">&hellip;that one day they would exchange rings.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- INVITATION + CALENDAR -->
+      <section class="section reveal">
+        <div class="inner">
+          <article class="card">
+            <h2 class="script script--lg text-center">Dear Friends</h2>
+            <p class="body-text text-center">
+              Time flies, and we are now ready to say <em>&ldquo;yes&rdquo;</em> to one another.
+            </p>
+            <p class="body-text text-center">
+              We invite you to be part of this long-awaited day.
+            </p>
+
+            <h3 class="script script--md text-center mt-5">August 2026</h3>
+            <div class="calendar" role="table" aria-label="August 2026">
+              <div class="cal-head">
+                <span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span
+                ><span>Sa</span><span>Su</span>
+              </div>
+              <div class="cal-grid" id="calendar-grid"></div>
+            </div>
+            <p class="label label--sm text-center mt-4">The day we say yes</p>
+
+            <p class="label label--strong text-center mt-5">We are waiting for you</p>
+            <p class="body-text body-text--tight text-center">Four Seasons Hotel</p>
+            <p class="body-text body-text--tight text-center">Nile Plaza, Cairo</p>
+            <p class="body-text body-text--tight text-center">Beginning at 16:00</p>
+            <figure class="figure-flowers">
+              <img src="/images/flowers.png" width="512" height="640" alt="" loading="lazy" />
+            </figure>
+          </article>
+        </div>
+      </section>
+
+      <!-- LOCATION -->
+      <section class="section reveal">
+        <div class="inner">
+          <article class="card">
+            <p class="label label--strong text-center">Location</p>
+            <h2 class="script script--lg text-center">Where we&rsquo;ll meet</h2>
+            <figure class="figure-frame figure-frame--white">
+              <img
+                src="/images/hotel.png"
+                width="1024"
+                height="704"
+                alt="Ink drawing of the Four Seasons Hotel Nile Plaza in Cairo"
+                loading="lazy"
+              />
+            </figure>
+            <h3 class="script script--md text-center mt-4">Four Seasons Hotel</h3>
+            <p class="label label--sm text-center">Nile Plaza &middot; Cairo</p>
+            <p class="body-text text-center">1089 Corniche El Nil, Garden City</p>
+            <p class="text-center">
+              <a
+                class="btn-outline"
+                href="https://maps.google.com/?q=Four+Seasons+Hotel+Cairo+at+Nile+Plaza"
+                target="_blank"
+                rel="noopener"
+                >Open map</a>
+                </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- TIMELINE -->
+      <section class="section reveal">
+        <div class="inner">
+          <article class="card">
+            <p class="label label--strong text-center">Wedding day</p>
+            <h2 class="script script--lg text-center">Plan of the day</h2>
+            <ol class="timeline">
+              <li class="tl-item">
+                <div class="tl-time script script--sm">16:00</div>
+                <div class="tl-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M12 20s-7-4.5-7-9.5A3.5 3.5 0 0 1 12 8a3.5 3.5 0 0 1 7 2.5C19 15.5 12 20 12 20z"
+                    />
+                  </svg>
+                </div>
+                <div class="tl-body">
+                  <p class="label label--sm">Guest arrival</p>
+                  <p class="italic-note">Welcome drinks</p>
+                </div>
+              </li>
+              <li class="tl-item">
+                <div class="tl-time script script--sm">17:00</div>
+                <div class="tl-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <circle cx="9.5" cy="14" r="5" />
+                    <circle cx="14.5" cy="14" r="5" />
+                  </svg>
+                </div>
+                <div class="tl-body">
+                  <p class="label label--sm">Ceremony</p>
+                  <p class="italic-note">The vows</p>
+                </div>
+              </li>
+              <li class="tl-item">
+                <div class="tl-time script script--sm">19:00</div>
+                <div class="tl-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <ellipse cx="12" cy="12" rx="9" ry="5" />
+                    <ellipse cx="12" cy="12" rx="3.5" ry="2" />
+                  </svg>
+                </div>
+                <div class="tl-body">
+                  <p class="label label--sm">Wedding dinner</p>
+                  <p class="italic-note">Seated meal</p>
+                </div>
+              </li>
+              <li class="tl-item">
+                <div class="tl-time script script--sm">21:30</div>
+                <div class="tl-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M5 19h14v-6H5zM7 13V9h10v4M12 9V5" />
+                  </svg>
+                </div>
+                <div class="tl-body">
+                  <p class="label label--sm">Cake &amp; toast</p>
+                  <p class="italic-note">Sweet moments</p>
+                </div>
+              </li>
+              <li class="tl-item">
+                <div class="tl-time script script--sm">22:00</div>
+                <div class="tl-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M8 4h8l-1 6a3 3 0 0 1-6 0zM12 13v7M9 20h6" />
+                  </svg>
+                </div>
+                <div class="tl-body">
+                  <p class="label label--sm">Party</p>
+                  <p class="italic-note">Dance the night</p>
+                </div>
+                </li>
+              <li class="tl-item">
+                <div class="tl-time script script--sm">01:00</div>
+                <div class="tl-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="8.5" r="3" />
+                    <circle cx="8.5" cy="14" r="3" />
+                    <circle cx="15.5" cy="14" r="3" />
+                  </svg>
+                </div>
+                <div class="tl-body">
+                  <p class="label label--sm">Conclusion</p>
+                  <p class="italic-note">Farewell</p>
+                </div>
+              </li>
+            </ol>
+          </article>
+        </div>
+      </section>
+
+      <!-- DRESS CODE -->
+      <section class="section reveal">
+        <div class="inner">
+          <article class="card">
+            <h2 class="script script--lg text-center">Dress code</h2>
+            <p class="body-text text-center">
+              Please wear elegant attire that fits the festive mood.
+            </p>
+            <p class="body-text text-center">
+              We would be delighted if you joined our color palette.
+            </p>
+            <ul class="palette" aria-label="Color palette">
+              <li style="--sw: #d5cdc7"></li>
+              <li style="--sw: #d9a7ac"></li>
+              <li style="--sw: #b78188"></li>
+              <li style="--sw: #6b504c"></li>
+              <li style="--sw: #4a332c"></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- DETAILS -->
+      <section class="section reveal">
+        <div class="inner">
+          <article class="card">
+            <h2 class="script script--lg text-center">Details</h2>
+            <p class="body-text text-center">
+              Please note that the format of the celebration does not include a children&rsquo;s
+              area or animators. We kindly ask you to spend this evening without children.
+            </p>
+            <div class="infinity infinity--sm">&#8734;</div>
+            <p class="body-text text-center">
+              Instead of bouquets, we would be happy to receive your favorite book for our future
+              family library.
+            </p>
+            <div class="infinity infinity--sm">&#8734;</div>
+            <p class="body-text text-center">
+              From the bottom of our hearts we ask you to refrain from shouts of
+              &ldquo;Bitter!&rdquo; and to preserve the warm atmosphere of an intimate family
+              celebration.
+            </p>
+          </article>
+        </div>
+      </section>
+<!-- COUNTDOWN -->
+      <section class="section reveal">
+        <div class="inner">
+          <h2 class="script script--lg text-center">Until our wedding</h2>
+          <div class="countdown" id="countdown" data-date="2026-08-25T16:00:00+03:00">
+            <div class="cd-unit"><span class="cd-num" data-days></span><span class="label label--sm">Days</span></div>
+            <div class="cd-unit"><span class="cd-num" data-hours></span><span class="label label--sm">Hours</span></div>
+            <div class="cd-unit"><span class="cd-num" data-minutes></span><span class="label label--sm">Minutes</span></div>
+            <div class="cd-unit"><span class="cd-num" data-seconds></span><span class="label label--sm">Seconds</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RSVP -->
+      <section class="section reveal" id="rsvp">
+        <div class="inner">
+          <article class="card">
+            <h2 class="script script--lg text-center">RSVP</h2>
+            <p class="body-text text-center">
+              Please confirm your attendance by April 1, 2026.
+            </p>
+            <form class="rsvp-form" id="rsvp-form" novalidate>
+              <div class="field">
+                <label class="label label--sm" for="fullname">Full name</label>
+                <input type="text" id="fullname" name="fullname" autocomplete="name" required />
+                <p class="field-error" data-error-for="fullname"></p>
+              </div>
+
+              <fieldset class="field">
+                <legend class="label label--sm">Will you attend?</legend>
+                <label class="radio"
+                  ><input type="radio" name="attending" value="yes" required /><span
+                    >Yes, with joy</span
+                  ></label
+                >
+                <label class="radio"
+                  ><input type="radio" name="attending" value="no" /><span>Sadly, no</span></label
+                >
+                <p class="field-error" data-error-for="attending"></p>
+              </fieldset>
+
+              <div class="text-center">
+                <button class="btn-outline" type="submit">Submit</button>
+              </div>
+              <p class="form-success italic-note text-center" id="rsvp-success" hidden>
+                Thank you, your reply has been noted.
+              </p>
+            </form>
+          </article>
+        </div>
+      </section>
+
+      <!-- VOICE MESSAGE -->
+      <!-- <section class="section reveal">
+        <div class="inner">
+          <article class="card">
+            <p class="label label--strong text-center">A message from us</p>
+            <h2 class="script script--lg text-center">With love</h2>
+            <p class="italic-note italic-note--block text-center">
+              Before the big day, we wanted to share a small message with you&hellip;
+            </p>
+            <div class="voice">
+              <button class="voice-play" id="voice-play" type="button" aria-label="Play voice note">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l10 6-10 6z" /></svg>
+              </button>
+              <div class="voice-wave" id="voice-wave" aria-hidden="true"></div>
+              <div class="voice-meta">
+                <span id="voice-current">0:00</span>
+                <span class="italic-note">voice note</span>
+                <span>6:08</span>
+              </div>
+            </div>
+            <p class="script script--sm text-center mt-4">&mdash; Omar &amp; Laila</p>
+          </article>
+        </div>
+      </section> -->
+      <!-- CLOSING -->
+     <footer class="section section--closing reveal">
+        <div class="inner">
+          <article class="card">
+            <figure class="figure-hands">
+              <img src="/images/hands.png" width="640" height="512" alt="" loading="lazy" />
+            </figure>
+            <p class="body-text text-center">
+              We are excited to celebrate this special moment with you and create beautiful memories
+              together.
+            </p>
+            <h2 class="script script--md text-center">Until our wedding day</h2>
+          </article>
+          <div class="closing-sign text-center">
+            <div class="infinity infinity--sm">&#8734;</div>
+            <p class="script script--lg">Omar <span class="amp">&amp;</span> Laila</p>
+            <p class="label label--sm">25 . 08 . 2026 &mdash; Cairo</p>
+          </div>
+
+          <div class="credit text-center">
+            <p class="label label--sm">Made by <strong>INVITO</strong></p>
+            <div class="credit-icons">
+              <a href="https://www.instagram.com/invito_eg?igsh=NWVlN2M1bWozaDl2" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
+                </svg>
+              </a>
+              <a href="https://am10010.github.io/Invito/" target="_blank" rel="noopener noreferrer" aria-label="Website">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
